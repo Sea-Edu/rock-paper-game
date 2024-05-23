@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body{
+    font-family: "Barlow Condensed", sans-serif;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #131537;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2rem;
+}
+.head-box{
+    width: 55vw;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.text-card h1{
+    font-size: 1.9em;
+}
+.score-mini-box{
+    width: 15%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.score-mini-box p{
+    font-size: 1.1em;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.score-mini-box h2{
+    font-size: 3.2em;
+    color: #383a59;
+    line-height: 1.4;
+}
+.render{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+.path-img{
+   transform: rotate(60deg);
+   position: relative;
+   width: 65%;
+}
+.group{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.back-silver{
+    background-color: silver;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+.inside-card{
+    margin-top: 5px;
+    background-color: white;
+    height: 95%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rock{
+    background-color: blue;
+    top: 30%;
+    left: 37%;
+    
+     
+}
+
+.paper{
+    background-color: yellow;
+    top: 30%;
+    left: 59%;
+}
+.scissor{
+    background-color: red;
+    top: 70%;
+    left: 48%;    
+}
+
+.rock:active{
+    border: none;
+    box-shadow: 0px 7px rgb(49, 49, 243);
+}
+.paper:active {
+    border: none;
+    box-shadow: 0px 7px rgb(243, 243, 77);
+}
+.scissor:active {
+    border: 1px solid red;
+    box-shadow: 0px 7px rgb(235, 50, 50);
+}
